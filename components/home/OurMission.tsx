@@ -8,10 +8,10 @@ const OurMission = () => {
   return (
     <div className="px-2 py-2">
       <div className="flex flex-col lg:flex-row gap-4 md:gap-8 bg-[#9e9e9e] px-4 py-4 mb-4">
-        <div className="mb-4 w-full lg:w-1/4 h-auto">
+        <div className="mb-4 w-full 2xl:w-1/4 xl:w-1/2 h-auto">
           <div className="relative flex justify-center items-center">
             <Image src={image1} alt="image1" width={549} height={100} />
-            <h1 className="text-[24px] md:text-[32px] font-bold mb-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <h1 className="text-[24px] md:text-[1.6vw] font-bold mb-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               OUR MISSION
             </h1>
           </div>

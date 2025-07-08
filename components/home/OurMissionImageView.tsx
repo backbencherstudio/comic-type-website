@@ -52,7 +52,7 @@ const OurMissionImageView = () => {
           {images.map((img, idx) => (
             <div
               key={img.id}
-              className={`border border-black bg-gray-400 flex items-center justify-center cursor-pointer hover:opacity-90 overflow-hidden transition-all duration-1000 ease-in-out ${
+              className={`border md:border-2 border-black bg-gray-400 flex items-center justify-center cursor-pointer hover:opacity-90 overflow-hidden transition-all duration-1000 ease-in-out ${
                 show ? "opacity-100" : "opacity-0"
               } ${getImageWidth(img.id)}`}
               style={{ 
