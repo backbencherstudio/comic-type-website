@@ -14,6 +14,9 @@ body {
 .clip-bottom-left {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 99%);
 }
+.clip-navbar {
+  clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 95%);
+}
 
 
 
