@@ -22,7 +22,6 @@ const Gallery = () => {
   const handlePlayClick = (videoId: number) => {
     setPlayingVideos((prev) => new Set(prev).add(videoId));
 
-    // Add autoplay parameter to YouTube URL
     const iframe = document.querySelector(
       `iframe[data-video-id="${videoId}"]`
     ) as HTMLIFrameElement;
@@ -69,17 +68,14 @@ const Gallery = () => {
                 data-video-id={video.id}
               ></iframe>
 
-              {/* Custom Play Button Overlay */}
               {!playingVideos.has(video.id) && (
                 <div className="absolute inset-0 bg-black flex items-center justify-center cursor-pointer transition-all duration-300">
                   <button
                     onClick={() => handlePlayClick(video.id)}
                     className="group relative w-20 h-20 md:w-24 md:h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-opacity-100 hover:scale-110 shadow-2xl"
                   >
-                    {/* Play icon */}
                     <div className="w-0 h-0 border-l-[20px] md:border-l-[24px] border-l-black border-t-[12px] md:border-t-[14px] border-t-transparent border-b-[12px] md:border-b-[14px] border-b-transparent ml-1 md:ml-1.5 transition-transform duration-300 group-hover:scale-110" />
 
-                    {/* Ripple effect */}
                     <div className="absolute inset-0 rounded-full border-2 border-white opacity-60 animate-ping" />
                     <div
                       className="absolute inset-0 rounded-full border-2 border-white opacity-40 animate-ping"

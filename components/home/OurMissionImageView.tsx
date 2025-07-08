@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 const images = [
@@ -61,9 +62,11 @@ const OurMissionImageView = () => {
               }}
               onClick={() => handleImageClick(img.id)}
             >
-              <img 
+              <Image 
                 src={img.src} 
                 alt={img.alt} 
+                width={1000}
+                height={1000}
                 className="object-cover w-full h-full transition-all duration-1000 ease-in-out" 
               />
             </div>
