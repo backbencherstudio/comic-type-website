@@ -65,7 +65,7 @@ const OurMissionVideos = () => {
   };
 
   return (
-    <div>
+    <div className="bg-[#555454] px-4 py-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
         {videos.map((video) => (
           <div key={video.id} className="relative min-h-[300px] md:min-h-[600px]">

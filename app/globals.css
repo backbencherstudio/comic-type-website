@@ -7,8 +7,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* .nav-bar {
-   box-shadow: 
-      1px -6px 1px #000000, 
-      -4px 6px 1px #000000; 
-} */
+.clip{
+  clip-path: polygon(1% 0, 100% 0, 100% 100%, 1.5% 100%);
+}

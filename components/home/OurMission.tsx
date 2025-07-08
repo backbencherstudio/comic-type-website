@@ -3,10 +3,11 @@ import Image from "next/image";
 import placeholder from "@/public/images/placeholder2.jpg";
 import image1 from "@/public/button.png";
 import OurMissionVideos from "./OurMissionVideos";
+import OurMissionImageView from "./OurMissionImageView";
 const OurMission = () => {
   return (
     <div className="px-2 py-2">
-      <div className="flex flex-col lg:flex-row gap-4 md:gap-8 bg-[#9e9e9e] px-4 py-4">
+      <div className="flex flex-col lg:flex-row gap-4 md:gap-8 bg-[#9e9e9e] px-4 py-4 mb-4">
         <div className="mb-4 w-full lg:w-1/4 h-auto">
           <div className="relative flex justify-center items-center">
             <Image src={image1} alt="image1" width={549} height={100} />
@@ -64,6 +65,7 @@ const OurMission = () => {
         </div>
       </div>
       <OurMissionVideos />
+      <OurMissionImageView />
     </div>
   );
 };
