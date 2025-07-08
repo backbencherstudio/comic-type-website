@@ -29,14 +29,14 @@ const OurMissionImageView = () => {
   return (
     <div>
       <div className="bg-[#555454] px-4 py-4">
-        <div className="relative w-fit -mt-16">
+        <div className="relative w-fit -mt-16 z-20">
           <div className="bg-black border-2 border-black pb-2 clip">
             <h1 className="text-black text-[24px] md:text-[32px] font-bold uppercase bg-white p-2 clip">
               Our Mission Images
             </h1>
           </div>
         </div>
-        <div className="mt-8 grid grid-cols-8 gap-4 ">
+        <div className="grid grid-cols-8 gap-4 -mt-8">
           {images.map((img, idx) => {
             let gridClasses = "";
             
