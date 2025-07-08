@@ -1,3 +1,4 @@
+import FAQ from "@/components/home/FAQ";
 import Gallery from "@/components/home/Gallery";
 import HeroVideo from "@/components/home/HeroVideo";
 import OurMission from "@/components/home/OurMission";
@@ -11,7 +12,9 @@ export default function HomePage() {
         <Gallery />
       </div>
       <div id="section1" className=""><OurMission /></div>
-      <div id="section2" className="">faq page</div>
+      <div id="section2" className="">
+        <FAQ />
+      </div>
     </div>
   );
 }
