@@ -36,33 +36,35 @@ const OurMissionImageView = () => {
             </h1>
           </div>
         </div>
-        <div className="grid grid-cols-8 gap-4 -mt-8">
+        <div className="-mt-8 flex gap-4 h-[514px]">
           {images.map((img, idx) => {
-            let gridClasses = "";
+            let width = "20%"; 
             
-            if (expandedImage === null) {
-              gridClasses = "col-span-1";
-            } else {
+            if (expandedImage !== null) {
               if (expandedImage === img.id) {
-                gridClasses = "col-span-4"; 
+                width = "60%"; 
               } else {
-                gridClasses = "col-span-1"; 
+                width = "10%";
               }
             }
 
             return (
               <div
                 key={img.id}
-                className={`border border-black bg-gray-400 flex items-center justify-center transition-all duration-700 cursor-pointer hover:opacity-90 ${
-                  show ? "opacity-100 scale-100" : "opacity-0 scale-90"
-                } ${gridClasses}`}
-                style={{ transitionDelay: `${idx * 120}ms` }}
+                className={`border border-black bg-gray-400 flex items-center justify-center cursor-pointer hover:opacity-90 overflow-hidden transition-all duration-1000 ease-in-out ${
+                  show ? "opacity-100" : "opacity-0"
+                }`}
+                style={{ 
+                  width: width,
+                  transitionDelay: `${idx * 120}ms`,
+                  transitionProperty: 'width, opacity, transform',
+                }}
                 onClick={() => handleImageClick(img.id)}
               >
                 <img 
                   src={img.src} 
                   alt={img.alt} 
-                  className="object-cover w-full h-[514px]" 
+                  className="object-cover w-full h-full transition-all duration-1000 ease-in-out" 
                 />
               </div>
             );
