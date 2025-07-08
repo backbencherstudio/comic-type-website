@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
 
 const menuItems = [
@@ -44,7 +45,7 @@ const Navbar = () => {
   return (
     <div className="px-2 pt-2">
       <div className="bg-black p-[2px] ">
-        <nav className="bg-[#555454] px-4 py-6 flex items-center justify-between relative nav-bar clip-navbar">
+        <nav className="bg-[#555454] px-4 py-6 flex items-center justify-between relative nav-bar md:clip-navbar">
           <button
             className="md:hidden flex flex-col gap-1 z-20"
             onClick={() => setOpen((v) => !v)}
@@ -56,8 +57,8 @@ const Navbar = () => {
           </button>
 
           <div className="flex items-center ml-4 md:ml-0">
-            <div className="w-10 h-10 bg-white text-xs flex items-center justify-center rounded shadow">
-              LOGO
+            <div className=" bg-white text-xs flex items-center justify-center rounded shadow">
+              <Image src="/logo.png" alt="logo" width={300} height={300} className="w-16 h-16" />
             </div>
           </div>
 
@@ -86,10 +87,18 @@ const Navbar = () => {
             )}
           </div>
 
+          {/* Overlay for closing menu */}
+          {open && (
+            <div
+              className="fixed inset-0 bg-black/30 z-0"
+              onClick={() => setOpen(false)}
+            />
+          )}
+
           {/* Mobile Menu (now slides in from left) */}
           <div
             ref={menuRef}
-            className={`fixed top-0 left-0 h-full w-64 bg-gray-800 shadow-lg z-10 transform transition-transform duration-300 ease-in-out
+            className={`fixed top-0 left-0 h-full w-64 bg-gray-800 shadow-lg z-50 transform transition-transform duration-300 ease-in-out
         ${open ? "translate-x-0" : "-translate-x-full"}
         flex flex-col pt-20 gap-6`}
           >
@@ -117,14 +126,6 @@ const Navbar = () => {
               )
             )}
           </div>
-
-          {/* Overlay for closing menu */}
-          {open && (
-            <div
-              className="fixed inset-0 bg-black bg-opacity-30 z-0"
-              onClick={() => setOpen(false)}
-            />
-          )}
         </nav>
       </div>
     </div>

@@ -20,7 +20,7 @@ const HeroVideo = () => {
   };
 
   return (
-    <div className="p-2">
+    <div className="p-2 relative z-10">
       <div className="min-h-[88vh] relative border-6 border-[#4E394B] stroke-2 stroke-amber-300">
         <iframe
           width="100%"
