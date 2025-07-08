@@ -2,9 +2,9 @@
 import React, { useState, useRef, useEffect } from "react";
 
 const menuItems = [
-  { label: "SCROLL HERE 1", href: "#section1", type: "scroll" },
+  { label: "OUR MISSION", href: "#section1", type: "scroll" },
   { label: "LINK TO EXTERNAL", href: "https://example.com", type: "external" },
-  { label: "SCROLL HERE 2", href: "#section2", type: "scroll" },
+  { label: "FAQ", href: "#section2", type: "scroll" },
 ];
 
 const Navbar = () => {

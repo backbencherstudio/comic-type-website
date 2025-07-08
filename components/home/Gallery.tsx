@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import img1 from "@/public/images/tiger.jpg";
+import img1 from "@/public/images/placeholder.jpg";
 
 const Gallery = () => {
   const [playingVideos, setPlayingVideos] = useState<Set<number>>(new Set());
