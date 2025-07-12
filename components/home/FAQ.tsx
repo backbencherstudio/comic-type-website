@@ -36,19 +36,18 @@ const FAQ = () => {
   };
 
   return (
-    <div className="px-2 sm:px-2 pb-4">
-        <div className="flex justify-center items-center">
-            <div className="relative w-fit -mt-8 -mb-8 z-20">
-              <div className="bg-black border-2 border-black pb-2 clip">
-                <h1 className="text-black text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase bg-white py-2 sm:py-4 px-3 sm:px-6 clip text-center">
-                  Frequently Asked Questions
-                </h1>
-              </div>
-            </div>
+    <div className="px-2 sm:px-2 pb-4 mb-38">
+      <div className="flex justify-center items-center">
+        <div className="relative w-fit -mt-8 -mb-8 z-20">
+          <div className="bg-black border-2 border-black pb-2 clip">
+            <h1 className="text-black text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase bg-white py-2 sm:py-4 px-3 sm:px-6 clip text-center">
+              Frequently Asked Questions
+            </h1>
           </div>
+        </div>
+      </div>
       <div className="bg-black p-[2px] ">
         <section className="flex flex-col items-center justify-center bg-[#555454] pb-10 px-4 clip-bottom-left">
-          
           <div className="w-full max-w-2xl sm:max-w-4xl md:max-w-7xl mx-auto pt-4 md:pt-10 ">
             {faqs.map((faq, idx) => (
               <div
@@ -79,43 +78,7 @@ const FAQ = () => {
               </div>
             ))}
           </div>
-          <div className="flex gap-4 text-white mt-2">
-            <a href="">
-              <FiInstagram className="text-[24px] lg:text-[48px]" />
-            </a>
-            <a href="">
-              <IoLogoTiktok className="text-[24px] lg:text-[48px]" />
-            </a>
-            <a href="">
-              <FaXTwitter className="text-[24px] lg:text-[48px]" />
-            </a>
-            <a href="">
-              <FaYoutube className="text-[24px] lg:text-[48px]" />
-            </a>
-          </div>
-          <div className="text-white text-center max-w-5xl mx-auto mt-10">
-            <h1 className="lg:text-2xl sm:text-xl text-lg  mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quos.
-            </h1>
-            <p className="md:text-base text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              debitis optio earum delectus, voluptatibus corporis nemo modi in
-              sunt inventore rerum ipsa, ad consectetur repellat odio nobis rem
-              totam aperiam doloremque numquam quae laborum ratione
-              consequuntur. Impedit, nam culpa! Similique molestiae omnis
-              aliquid sit laborum commodi inventore, voluptatibus hic ut.
-            </p>
-            <div className="flex justify-center items-center mt-10">
-              <Image
-                src="/logo.png"
-                alt=""
-                width={300}
-                height={300}
-                className="w-16 h-16"
-              />
-            </div>
-          </div>
+          
         </section>
       </div>
     </div>

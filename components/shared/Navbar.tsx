@@ -43,7 +43,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="px-2 pt-2">
+    <div className="px-2 pt-2 sticky top-0 z-50">
       <div className="bg-black p-[2px] ">
         <nav className="bg-[#555454] px-4 py-6 flex items-center justify-between relative nav-bar md:clip-navbar">
           <button
