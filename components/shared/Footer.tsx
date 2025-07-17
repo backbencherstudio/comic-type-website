@@ -7,7 +7,7 @@ import { IoLogoTiktok } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <div className="px-2 fixed bottom-0 left-0 right-0 z-30 border-t-2 border-white">
+    <div className="px-2 border-t-2 border-white">
       <div className="bg-[#555454] py-2 px-4 ">
         <div className="flex justify-center gap-3 text-white mb-2">
           <a href="" className="hover:text-gray-300 transition-colors">

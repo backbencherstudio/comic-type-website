@@ -36,7 +36,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="px-2 sm:px-2 pb-4 mb-38">
+    <div className="px-2 sm:px-2 pb-4">
       <div className="flex justify-center items-center">
         <div className="relative w-fit -mt-8 -mb-8 z-20">
           <div className="bg-black border-2 border-black pb-2 clip">
