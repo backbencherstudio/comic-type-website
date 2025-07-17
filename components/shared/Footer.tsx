@@ -7,7 +7,7 @@ import { IoLogoTiktok } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <div className="px-2 border-t-2 border-white">
+    <div className="px-2 border-t-2 border-white mt-4">
       <div className="bg-[#555454] py-2 px-4 ">
         <div className="flex justify-center gap-3 text-white mb-2">
           <a href="" className="hover:text-gray-300 transition-colors">
@@ -23,12 +23,12 @@ const Footer = () => {
             <FaYoutube className="text-lg" />
           </a>
         </div>
-        <div className="text-white text-center max-w-xl mx-auto">
-          <h1 className="text-xs font-medium mb-1">
+        <div className="text-white text-center max-w-5xl mx-auto">
+          <h1 className="text-sm sm:text-[1.375rem] font-medium mb-1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
             quos.
           </h1>
-          <p className="text-xs text-gray-300 leading-tight mb-2">
+          <p className="text-xs text-justify md:text-center text-gray-300 leading-tight mb-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
             debitis optio earum delectus, voluptatibus corporis nemo modi in
             sunt inventore rerum ipsa, ad consectetur repellat odio nobis rem
@@ -42,7 +42,7 @@ const Footer = () => {
               alt="Company Logo"
               width={300}
               height={300}
-              className="w-6 h-6"
+              className="w-8 h-8"
             />
           </div>
         </div>

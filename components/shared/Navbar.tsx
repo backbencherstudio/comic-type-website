@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <div className="px-2 pt-2 sticky -top-2 z-50">
       <div className="bg-black p-[2px] ">
-        <nav className="bg-[#555454] px-4 py-6 flex items-center justify-between relative nav-bar md:clip-navbar">
+        <nav className="bg-[#555454] px-4 lg:py-6 py-2 flex items-center justify-between relative nav-bar md:clip-navbar">
           <button
             className="md:hidden flex flex-col gap-1 z-20"
             onClick={() => setOpen((v) => !v)}
